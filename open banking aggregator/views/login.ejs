@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Aggregator </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/login.css">
+    <style>
+      .navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+   font-size:18px; 
+   background: lightgray;
+}
+  #home{
+  font-size: 22px;
+}
+
+  #myform{
+      width:45%;
+      margin-left: 280px;
+      margin-top: 50px;
+    
+  }
+
+  </style>
+  </head>
+  <body>
+  
+  <nav class="navbar navbar-invert">
+  <div class="container-fluid">
+    <div class="navbar-header">
+     <a class="navbar-brand" href="/"><span id="home">Home</span></a>
+    </div>
+    <ul class="nav navbar-nav navbar-right"> 
+      <li><a href="/login"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+      <li><a href="/register"><span class="glyphicon glyphicon-log-in"></span> Register</a></li>
+      <li><a href="/">Logout</a></li>
+    </ul>
+  </div>
+</nav>
+
+<body>
+
+  <form action="/login" method="POST">
+  <div class="container">
+    <div id="myform">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+  </div>
+
+</form>
+
+</body>
+
+<% include partials/footer %>

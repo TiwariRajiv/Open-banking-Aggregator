@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Aggregator </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.content {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin:auto;
+    margin-top:100px;
+    width:400px;
+}
+
+input[type=text], select, textarea {
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=password], select, textarea {
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align:center;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+</style>
+  </head>
+  <body>
+  
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">Home</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right"> 
+      <li><a href="/login"><span class="glyphicon glyphicon-user"></span> Login</a></li>
+      <li><a href="/register"><span class="glyphicon glyphicon-log-in"></span> Register</a></li>
+      <li><a href="/">Logout</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+<div class="content">
+  <form action="/home/addAccount" method="POST">
+    <label for="uid">User Id&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+    <input type="text" id="uname" name="username1" placeholder="Username">
+    <br>
+    <label for="BANK">Bank&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   </label>
+    <select id="BANK" name="bank1">
+      <option value="SBI">State Bank of India</option>
+      <option value="PNB">Punjab National Bank</option>
+      <option value="BOB">Bank of Baroda</option>
+    </select>
+    <label for="bid">Bank Id&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+    <input type="text" id="bid" name="bid1" placeholder="Bank Id ">
+    <br>
+    <label for="pwd">Password&nbsp&nbsp&nbsp</label>
+    <input type="password" id="Pwd" name="bpass1" placeholder="Password">
+    <br>
+    
+    <br>
+    <br>
+    <span style="margin-left: 100px;margin-top: 50px"><input class="btn btn-default" type="submit" value="Submit"></span>
+  </form>
+</div>
+
+</body>
+</html>

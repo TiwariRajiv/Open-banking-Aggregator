@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  	<head>
+    	<title> Aggregator </title>
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    	<link href="/stylesheets/register.css" rel="stylesheet">
+  	</head>
+ 	<body>
+
+        <div class="container">
+  		<h3 style="text-align:center;"><strong> Last Transactions </strong></h3>
+        <div class="row">
+  		<div class="col-md-12">
+  		<div class="table-responsive">
+  		 <table class="table table-bordered">
+					<tr class="table-hover">
+					    		<th>Transaction date</th>
+					    		<th>Transaction Narration</th>
+					    		<th>Transaction Debit</th>	
+					    		<th>Transaction Credit</th>
+					    	</tr>
+	      
+  		<% transactions.forEach(function(transaction) { %>
+                           <tr>
+					    		<td><%= transaction.time %></td>
+					    		<td><%= transaction.narration %></td>
+					    		<td><%= transaction.debit %></td>	
+					    		<td><%= transaction.credit %></td>
+					    	</tr>
+					    </table>
+					</div>
+				</div>
+			</div>
+  		<% });%>
+  		</div>
+
+<% include partials/footer %>
