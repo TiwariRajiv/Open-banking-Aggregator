@@ -1,8 +1,8 @@
 # Open-banking-Aggregator
-Platform for the users to perform transactions across multiple banks, built over NodeJs server
+Platform for the users to perform transactions across multiple banks, built over NodeJs and express framework
 
 The PSD2 (Payment Service Directive) came into force in January 2016 in the European countries.
-The objectives of PSD2 are to make the payments safer, increase the consumer protection, and making
+The objective of PSD2 is to make the payments safer, increase the consumer protection, and making
 an increasingly integrated banking system which integrates all major banks for information sharing
 and instant inter-bank transactions
 Thus ensuring a level playing field for all players, including the new ones.
